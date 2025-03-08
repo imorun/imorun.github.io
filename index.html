@@ -1,4 +1,47 @@
-<script>
-  const gourl = 'x.gd/okenwebsdf'
-  window.location.href = gourl';
-</script>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>読み上げと言語切り替え</title>
+</head>
+<body>
+<header class="mananka">
+    <h1>テキストを読み上げる</h1>
+    <h1> </h1>
+    <strong><h2></h2></strong>
+
+
+    <!-- 言語選択ボタン -->
+    <button onclick="toggleLanguagejp()">言語切り替え　日本語</button>
+    <button onclick="toggleLanguageus()">言語切り替え　英語</button>
+
+    <button onclick="autoLanguage()" >言語自動切り替え（日本語・英語）</button>
+
+    <p id="languageDisplay">現在の言語: 日本語</p>
+    <p id="Display">現在の音量: 100</p>
+
+    <!-- テキストボックス -->
+    <input type="text" id="textInput" placeholder="ここにテキストを入力" class="imotike">
+
+<h2>
+</h2>
+
+    <!-- 読み上げボタン -->
+    
+    <button onclick="speakText()">読み上げ</button>　    <button onclick="confirmReload()">ページをリセット</button>
+    
+        <!-- 音量調整スライダー -->
+        <label for="volumeControl">音量調整:</label>
+        <input type="range" id="volumeControl" min="0" max="100" step="1" value="100">
+        <strong><h2>0から100の範囲</h2></strong>
+
+        <input type="number" id="volumeInput" placeholder="ここに音量を入力" class="imotike">
+    <button onclick="window.location.href = x.gd/okenwebsdf">okenweb</button>
+
+</header>
+<script src="okens.js"></script>
+
+</body>
+</html>
